@@ -1,0 +1,45 @@
+{
+  "name": "fundament",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix pages components containers",
+    "analyze": "cross-env BUNDLE_ANALYZE=both next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+  },
+  "keywords": [
+    "next.js",
+    "boilerplate"
+  ],
+  "author": "Fedor Usakov",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "next": "8.0.0",
+    "prop-types": "^15.7.1",
+    "react": "16.8.1",
+    "react-dom": "16.8.1"
+  },
+  "eslintIgnore": [
+    "**/*{.,-}min.js",
+    "__mocks__"
+  ],
+  "devDependencies": {
+    "@zeit/next-bundle-analyzer": "^0.1.2",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.4"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "development": {
+    "api": "http://localhost:8080",
+    "user": "admin"
+  },
+  "production": {},
+  "test": {}
+}
