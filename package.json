@@ -1,7 +1,7 @@
 {
   "name": "fundament",
   "version": "0.0.1",
-  "description": "",
+  "description": "Looking forward for perfect feature rich modern production ready React/Redux serverless setup",
   "main": "index.js",
   "scripts": {
     "dev": "next",
