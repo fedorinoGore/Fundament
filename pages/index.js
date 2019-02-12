@@ -17,6 +17,10 @@ const Title = styled.h1`
   color: #FF6F61;
   font-size: 48px;
   font-weight: 300;
+  margin: auto;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `
 
 export default () => <Title>NEXT.JS is cool</Title>

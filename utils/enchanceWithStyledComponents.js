@@ -1,6 +1,4 @@
-import Document from 'next/document'
- 
-const enchanceWithStyledComponents = async (ctx, sheet) => {
+const enchanceWithStyledComponents = (initialProps, ctx, sheet) => {
   const originalRenderPage = ctx.renderPage
 
   ctx.renderPage = () =>
@@ -8,7 +6,6 @@ const enchanceWithStyledComponents = async (ctx, sheet) => {
       enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
     })
 
-  const initialProps = await Document.getInitialProps(ctx)
   return {
     ...initialProps,
     styles: [...initialProps.styles, ...sheet.getStyleElement()]
