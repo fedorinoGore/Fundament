@@ -54,6 +54,15 @@
   "settings": {
     "flowtype": {
       "onlyFilesWithFlowAnnotation": true
+    },
+    "import/resolver": {
+        "alias": {
+          "map": [
+            [ "utils", "./utils" ],
+            [ "components", "./components" ],
+            [ "containers", "./containers" ]
+          ]
+        }
     }
   }
 }
