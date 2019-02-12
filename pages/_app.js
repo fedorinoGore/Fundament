@@ -11,7 +11,7 @@ export default class MyApp extends App {
   }
 
   componentDidCatch(error, errorInfo) {
-    console.info('%cCUSTOM ERROR HANDLING: %o', 'color:#FF6F61;font-size:14px;font-style:italic;', error, errorInfo) // eslint-disable-line no-console
+    console.info('%cCUSTOM ERROR HANDLING: %s', 'color:#FF6F61;font-size:14px;font-style:italic;', error, errorInfo) // eslint-disable-line no-console
     // This is needed to render errors correctly in development / production
     super.componentDidCatch(error, errorInfo)
   }
